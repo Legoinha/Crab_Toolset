@@ -10,9 +10,9 @@ Use it to check the status of several running jobs in sequence. It prints to the
 Moreover, there is a flag for authomatic resubmision of failed jobs, which when "True", also saves the output of "crab resubmit -d ..." in the same .log file.
 
 
-TO RUN: python3 CrabTask_manager.py "Keyword"
-        
-        Keyword -- a word to filter the Tasks that are going to be checked. E.g: using "miniAOD" only files containing "miniAOD" in the name are considered. If no keyword is provided all files are                           inspected. (This code assumes by default the folder crab_projects)
+TO RUN: 
+```python3 CrabTask_manager.py "Keyword"```
+Keyword -- a word to filter the Tasks that are going to be checked. E.g: using "miniAOD" only files containing "miniAOD" in the name are considered. If no keyword is provided all files are                           inspected. (This code assumes by default the folder crab_projects)
 
 
 **CrabTask_large_submission_handler.py**
