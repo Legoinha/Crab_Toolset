@@ -1,5 +1,32 @@
-# Crab_Toolset
-Set of codes that make large/group crab submissions easier. 
+# Submiting a crab for analysis
+
+From the 2024 pp/PbPb data/MC miniAOD reference:
+https://twiki.cern.ch/twiki/bin/viewauth/CMS/HiForestSetup
+
+```
+cmsrel CMSSW_14_1_4_patch5 #
+cd CMSSW_14_1_4_patch5/src
+cmsenv
+git cms-merge-topic CmsHI:forest_CMSSW_14_1_X
+scram b -j4
+
+git clone -b Dfinder_14XX_miniAOD https://github.com/boundino/Bfinder.git --depth 1
+source Bfinder/test/DnBfinder_to_Forest.sh
+```
+Then add the file `forest_miniAOD_run3_MC_wBfinder.py` and the `crabConfig_X_PbPb.py` from this repo and do 
+`scram b -j4`
+
+To run it locally (for cheking purposes): 
+cmsRun forest_miniAOD_run3_MC_wBfinder.py
+
+To submit a crab job:
+crab submit -c crabConfig_X_PbPb.py
+
+
+
+
+# HELPFULL
+bellow is a set of codes that make large/group crab submissions easier. 
 
 
 These codes were created to handle private MC production in the context of the CMS experiment.
