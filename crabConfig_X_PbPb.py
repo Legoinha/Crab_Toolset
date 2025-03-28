@@ -25,6 +25,11 @@ config.Data.inputDBS = 'phys03'
 config.Data.unitsPerJob = 1 
 config.Data.totalUnits = -1
 config.Data.splitting = 'FileBased'
-config.Data.publication = True
 
-config.Site.storageSite = "T2_US_Vanderbilt"
+##########################################################################
+#config.Data.outLFNDirBase = '/store/user/hmarques/X3872_Bfinder/' 
+config.JobType.outputFiles = ['HiForestMINIAOD_Bfinder.root'] 
+config.Data.publication = False 
+#config.Site.storageSite = "T2_CH_CERN" 
+config.Site.storageSite = "T2_PT_NCG_Lisbon" 
+##########################################################################
