@@ -17,10 +17,10 @@ Then add the file `forest_miniAOD_run3_MC_wBfinder.py` and the `crabConfig_X_PbP
 `scram b -j4`
 
 To run it locally (for cheking purposes): 
-cmsRun forest_miniAOD_run3_MC_wBfinder.py
+```cmsRun forest_miniAOD_run3_MC_wBfinder.py```
 
 To submit a crab job:
-crab submit -c crabConfig_X_PbPb.py
+```crab submit -c crabConfig_X_PbPb.py```
 
 
 
